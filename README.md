@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/4ad48761-d14c-407a-9dec-1b76a9afb04a
 ## What's included
 
 - **[Editing playbook](docs/EDITING-PLAYBOOK.md):** how Nate's videos get edited with AI, the measured house reel style, the B-roll, caption, and sound rules, and how every note becomes a rule in a skill.
-- **16 skills**, mirrored for both assistants, with their helper scripts and references.
+- **17 skills**, mirrored for both assistants, with their helper scripts and references.
 - **406 draft motion-graphics cards** across two styles, with manifests, CSS tokens, and editable slots.
 - **Two scene templates:** dark graph paper and a left glass popout.
 - Transcription, silence cutting, mistake detection, reviewed cut rendering,
@@ -111,6 +111,8 @@ and [storytelling workbook](docs/STORYTELLING-WORKBOOK.md).
 This fork adds **preserve-video-quality** for Codex and Claude Code. It checks the original recording, avoids repeated lossy MP4 exports, uses HyperFrames final-render settings, and compares frames from the encoded result. The skill is in [Codex](.agents/skills/preserve-video-quality/SKILL.md) and [Claude Code](.claude/skills/preserve-video-quality/SKILL.md).
 
 After cloning this fork, ask Codex: `Use $preserve-video-quality to check my original video and final render for visible quality loss.` In Claude Code, use `/preserve-video-quality`. Keep the original file available; the skill cannot recover detail lost before editing.
+
+한국어 스킬: [Codex](.agents/skills/preserve-video-quality-ko/SKILL.md) · [Claude Code](.claude/skills/preserve-video-quality-ko/SKILL.md). 원본 영상을 편집할 때 Codex에는 `$preserve-video-quality-ko`, Claude Code에는 `/preserve-video-quality-ko`를 요청하세요. 20분 원본을 약 10분으로 줄이는 강의 예시의 검수 절차도 포함합니다.
 
 ## Create a reel or YouTube Short
 
