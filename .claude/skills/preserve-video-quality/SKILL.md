@@ -39,7 +39,7 @@ Protect visible detail from ingestion through the final MP4. A smaller file alon
 3. Decode a few frames from the **encoded output**, not just the browser preview:
 
    ```bash
-   ffmpeg -ss 00:00:30 -i renders/final.mp4 -frames:v 1 -update 1 /tmp/final-check.png
+   ffmpeg -ss 00:00:30 -i renders/final.mp4 -frames:v 1 -update 1 final-check.png
    ```
 
 4. If a defect appears, identify the first stage where it appears: source, extraction, intermediate cut, composition scaling, final encode, or video-platform playback. Fix that stage and render again. A platform may transcode uploads; judge the local master separately from its streamed copy.
