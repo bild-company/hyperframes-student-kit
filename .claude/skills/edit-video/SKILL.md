@@ -35,6 +35,11 @@ missing, propose a style from `style-library/registry.json` based on the footage
    Resolve failures before the final render. Follow any review approvals already
    provided; do not repeat approval requests for the same authorized action.
 
+9. Before the final render, read `../preserve-video-quality/SKILL.md`. Use the
+   original recording and reviewed EDL as the source of truth; treat compressed
+   cut passes as review files rather than final-input masters. Compare matching
+   encoded source and output frames, and record render settings in `VERIFY.md`.
+
 Deliver the final MP4 path, edit decisions, retimed transcript, composition,
 and `VERIFY.md` describing what was checked and any remaining limitations.
 An automated detector proposes edits; editorial judgment remains necessary.
