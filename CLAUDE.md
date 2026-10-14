@@ -34,6 +34,7 @@ For one stage, load the matching local skill:
 | HTML compositions and media timing | `hyperframes` |
 | Preview, lint, and rendering | `hyperframes-cli` |
 | Compression artifacts and final export quality | `preserve-video-quality` |
+| 한국어 영상 화질 보존 안내 | `preserve-video-quality-ko` |
 | Timeline animation | `gsap` |
 | Install HyperFrames catalog blocks | `hyperframes-registry` |
 
