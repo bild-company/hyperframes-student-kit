@@ -33,6 +33,7 @@ For one stage, load the matching local skill:
 | Select or extend styles and templates | `style-library` |
 | HTML compositions and media timing | `hyperframes` |
 | Preview, lint, and rendering | `hyperframes-cli` |
+| Compression artifacts and final export quality | `preserve-video-quality` |
 | Timeline animation | `gsap` |
 | Install HyperFrames catalog blocks | `hyperframes-registry` |
 
