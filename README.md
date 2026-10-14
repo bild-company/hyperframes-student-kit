@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/4ad48761-d14c-407a-9dec-1b76a9afb04a
 ## What's included
 
 - **[Editing playbook](docs/EDITING-PLAYBOOK.md):** how Nate's videos get edited with AI, the measured house reel style, the B-roll, caption, and sound rules, and how every note becomes a rule in a skill.
-- **15 skills**, mirrored for both assistants, with their helper scripts and references.
+- **16 skills**, mirrored for both assistants, with their helper scripts and references.
 - **406 draft motion-graphics cards** across two styles, with manifests, CSS tokens, and editable slots.
 - **Two scene templates:** dark graph paper and a left glass popout.
 - Transcription, silence cutting, mistake detection, reviewed cut rendering,
@@ -61,7 +61,7 @@ Chromium. Make `node`, `ffmpeg`, and `ffprobe` available in your terminal.
 Then run these commands in PowerShell, macOS Terminal, or a Linux shell:
 
 ```sh
-git clone https://github.com/nateherkai/hyperframes-student-kit.git
+git clone https://github.com/bild-company/hyperframes-student-kit.git
 cd hyperframes-student-kit
 npm ci
 npm run setup
@@ -105,6 +105,12 @@ Codex: `$edit-video`. Claude Code: `/edit-video`. For a single operation use
 `cut-silences`, `cut-mistakes`, `video-storytelling`, or `style-library`.
 See the [step-by-step workflow](docs/WORKFLOW.md), [prompt recipes](docs/PROMPTS.md),
 and [storytelling workbook](docs/STORYTELLING-WORKBOOK.md).
+
+## Keep the final video sharp
+
+This fork adds **preserve-video-quality** for Codex and Claude Code. It checks the original recording, avoids repeated lossy MP4 exports, uses HyperFrames final-render settings, and compares frames from the encoded result. The skill is in [Codex](.agents/skills/preserve-video-quality/SKILL.md) and [Claude Code](.claude/skills/preserve-video-quality/SKILL.md).
+
+After cloning this fork, ask Codex: `Use $preserve-video-quality to check my original video and final render for visible quality loss.` In Claude Code, use `/preserve-video-quality`. Keep the original file available; the skill cannot recover detail lost before editing.
 
 ## Create a reel or YouTube Short
 
